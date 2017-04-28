@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:p="http://www.springframework.org/schema/p"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <!-- 配置需要被Spring管理的Bean（创建，创建后放在了Spring IOC容器里面）-->
+    <bean id="hello" class="com.skyzd.test.framework.Helloworld">
+        <!-- 配置该Bean需要注入的属性（是通过属性set方法来注入的） -->
+        <property name="info" value="Happy New Year!"/>
+    </bean>
+</beans>
